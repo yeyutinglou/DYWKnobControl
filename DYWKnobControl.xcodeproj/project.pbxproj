@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0669B348242CB2F400F0E7E2 /* DYWKnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0669B346242CB2F400F0E7E2 /* DYWKnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0669B34F242CB34B00F0E7E2 /* DYWKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B34E242CB34B00F0E7E2 /* DYWKnob.swift */; };
+		0669B352242CB35500F0E7E2 /* DYWKnobRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B350242CB35500F0E7E2 /* DYWKnobRenderer.swift */; };
+		0669B353242CB35500F0E7E2 /* DYWRotationGestureReconizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B351242CB35500F0E7E2 /* DYWRotationGestureReconizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0669B343242CB2F400F0E7E2 /* DYWKnobControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYWKnobControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0669B346242CB2F400F0E7E2 /* DYWKnobControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYWKnobControl.h; sourceTree = "<group>"; };
 		0669B347242CB2F400F0E7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0669B34E242CB34B00F0E7E2 /* DYWKnob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYWKnob.swift; sourceTree = "<group>"; };
+		0669B350242CB35500F0E7E2 /* DYWKnobRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYWKnobRenderer.swift; sourceTree = "<group>"; };
+		0669B351242CB35500F0E7E2 /* DYWRotationGestureReconizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYWRotationGestureReconizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				0669B346242CB2F400F0E7E2 /* DYWKnobControl.h */,
+				0669B34E242CB34B00F0E7E2 /* DYWKnob.swift */,
+				0669B350242CB35500F0E7E2 /* DYWKnobRenderer.swift */,
+				0669B351242CB35500F0E7E2 /* DYWRotationGestureReconizer.swift */,
 				0669B347242CB2F400F0E7E2 /* Info.plist */,
 			);
 			path = DYWKnobControl;
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					0669B342242CB2F400F0E7E2 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0669B353242CB35500F0E7E2 /* DYWRotationGestureReconizer.swift in Sources */,
+				0669B352242CB35500F0E7E2 /* DYWKnobRenderer.swift in Sources */,
+				0669B34F242CB34B00F0E7E2 /* DYWKnob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		0669B34C242CB2F400F0E7E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.DYWKnobControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +298,7 @@
 		0669B34D242CB2F400F0E7E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
